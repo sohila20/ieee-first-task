@@ -1,0 +1,20 @@
+body{
+  background-color: #3F51B5;
+}
+nav a img {
+  width: 20%;
+}
+@media(max-width:567px){
+  nav a img {
+    width: 25%;
+  }
+}
+form{
+  color:#3F51B5;
+  font-weight: bold;
+  background-color: white;
+}
+.btn{
+  background-color: #3F51B5;
+  color: white;
+}

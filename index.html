@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Form-Task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar ">
+        <a class="navbar-brand " href="index.html"><img src="./img/IEEE_White_Logo_Small-1.png" alt="logo" ></a>
+        
+    </nav>
+
+    <!--Form-->
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center col-12 my-3">
+            <form action=""class="workshop-form rounded col-lg-6 col-md-8 col-sm-10">
+                <div class="text-center mt-3">
+                    <h3>IEEE WORKSHOPS FORM</h3>
+                </div>
+                <div class="form-row justify-content-center py-2">
+                    <div class="form-group col-10">
+                        <label for="name"  class="control-label">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group col-10">
+                        <label for="email"  class="control-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group col-10">
+                    <label for="phone" class="control-label">Phone <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-group col-10">
+                    <label for="faculty" class="control-label">Faculty <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="faculty" required>
+                    </div>
+                    <div class="form-group col-10">
+                        <label for="grad-year" class="control-label">Graduation Year <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="grad-year" required>
+                    </div>
+                    <div class="form-group col-10">
+                        <label for="first-choice">First Preference <span class="text-danger">*</span></label>
+                        <select class="form-control" id="first-choice" name="first-choice" onchange="displayFirst(this.value)" required>
+                            <option value="">- Select -</option>
+                            <option value="analog">Analog electronics</option>
+                            <option value="digital">Digital Electronics</option>
+                            <option value="embedded">Embedded Systems</option>
+                            <option value="arduino">Arduino</option>
+                            <option value="python">Python</option>
+                            <option value="c++">C++</option>
+                            <option value="java">Java</option>
+                            <option value="front">Front end</option>
+                        </select>
+                    </div>
+                     
+                    <div class="form-group col-10">
+                        <label for="second-choice">Second Preference <span class="text-danger">*</span></label>
+                        <select class="form-control" id="second-choice" name="second-choice" onchange="displaySecond(this.value)" required>
+                            <option value="">- Select -</option>
+                            <option value="analog">Analog electronics</option>
+                            <option value="digital">Digital Electronics</option>
+                            <option value="embedded">Embedded Systems</option>
+                            <option value="arduino">Arduino</option>
+                            <option value="python">Python</option>
+                            <option value="c++">C++</option>
+                            <option value="java">Java</option>
+                            <option value="front">Front end</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn px-5 mb-2">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+   
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
